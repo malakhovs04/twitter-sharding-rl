@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+data/*.zst
+.env
+.env.*
+!.env.example
+*.pem

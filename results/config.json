@@ -1,0 +1,7 @@
+{
+  "capacity": 5409.0,
+  "migration_scale": 20686465.5,
+  "shard_price": 1.0,
+  "overload_price": 20.0,
+  "migration_price": 4.0
+}

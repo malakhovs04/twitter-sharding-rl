@@ -1,0 +1,13 @@
+{
+  "name": "trial_9_seed_7",
+  "trial": 9,
+  "seed": 7,
+  "hidden": 64,
+  "lr": 0.001,
+  "gamma": 0.9,
+  "target_interval": 256,
+  "validation_cost": 1167.780269312651,
+  "best_episode": 320,
+  "selection_rule": "Minimum mean validation cost across 3 seeds, then best validation seed; best checkpoint by validation",
+  "study_seconds": 210.85693216323853
+}

@@ -1,0 +1,75 @@
+{
+  "split_slots": {
+    "train": [
+      0,
+      384
+    ],
+    "validation": [
+      384,
+      480
+    ],
+    "test": [
+      480,
+      672
+    ]
+  },
+  "capacity_rule": "train 75% quantile of maximum per-shard requests at n=4",
+  "inventory_scale_rule": "train median live bytes",
+  "scenario_costs": {
+    "capacity": 5409.0,
+    "migration_scale": 20686465.5,
+    "shard_price": 1.0,
+    "overload_price": 20.0,
+    "migration_price": 4.0
+  },
+  "dqn_screen": {
+    "hidden": [
+      32,
+      64
+    ],
+    "lr": [
+      0.0003,
+      0.001
+    ],
+    "gamma": [
+      0.9,
+      0.97,
+      0.99
+    ],
+    "seed": 7,
+    "episodes": 160,
+    "checkpoint": 40
+  },
+  "dqn_finalists": 3,
+  "dqn_final_seeds": [
+    7,
+    42,
+    123
+  ],
+  "dqn_final_episodes": 400,
+  "dqn_checkpoint": 40,
+  "replay_capacity": 20000,
+  "batch": 64,
+  "warmup": 256,
+  "update_every": 4,
+  "target_interval": 256,
+  "reward_scale": 10,
+  "q_alpha": [
+    0.05,
+    0.15
+  ],
+  "q_gamma": [
+    0.9,
+    0.97
+  ],
+  "q_episodes": 600,
+  "q_seeds": [
+    7,
+    42,
+    123
+  ],
+  "test_policy": "One evaluation after all selections; no retuning on test",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "data_sha256": "346352cecac4bc25b22a5b3d37fba8ae4d9a764086772b1a4326836a0f2446a6"
+}

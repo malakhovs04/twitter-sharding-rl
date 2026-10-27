@@ -1,0 +1,36 @@
+Protocol fixed. Capacity=5408.25
+Baselines validated: fixed_6; threshold (1.0, 0.4)
+Protocol fixed. Capacity=5409.0
+Baselines validated: fixed_6; threshold (1.0, 0.4)
+Q-learning alpha=0.05, gamma=0.9 complete
+Q-learning alpha=0.05, gamma=0.97 complete
+Q-learning alpha=0.15, gamma=0.9 complete
+Q-learning alpha=0.15, gamma=0.97 complete
+Q selected a0.15_g0.9_s123
+DQN screen 1/12 val=1180.20
+DQN screen 2/12 val=1184.33
+DQN screen 3/12 val=1168.51
+DQN screen 4/12 val=1177.10
+DQN screen 5/12 val=1183.89
+DQN screen 6/12 val=1201.27
+DQN screen 7/12 val=1180.99
+DQN screen 8/12 val=1176.44
+DQN screen 9/12 val=1167.44
+DQN screen 10/12 val=1174.92
+DQN screen 11/12 val=1179.41
+DQN screen 12/12 val=1181.52
+DQN final trial_8_seed_7 val=1161.16
+DQN final trial_8_seed_42 val=1199.56
+DQN final trial_8_seed_123 val=1186.43
+DQN final trial_2_seed_7 val=1168.99
+DQN final trial_2_seed_42 val=1182.77
+DQN final trial_2_seed_123 val=1206.57
+DQN final trial_9_seed_7 val=1167.78
+DQN final trial_9_seed_42 val=1184.78
+DQN final trial_9_seed_123 val=1174.83
+DQN selected trial_9_seed_7
+Final test complete; no retuning.
+Baselines validated: fixed_6; threshold (1.0, 0.4)
+Final test complete; no retuning.
+Baselines validated: fixed_6; threshold (1.0, 0.4)
+Final test complete; no retuning.

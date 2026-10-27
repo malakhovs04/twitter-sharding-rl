@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "up": 1.0,
+    "down": 0.4,
+    "fixed": "fixed_6"
+  },
+  "q": {
+    "name": "a0.15_g0.9_s123",
+    "alpha": 0.15,
+    "gamma": 0.9,
+    "seed": 123,
+    "validation_cost": 2381.246159158245
+  },
+  "dqn": {
+    "name": "trial_9_seed_7",
+    "trial": 9,
+    "seed": 7,
+    "hidden": 64,
+    "lr": 0.001,
+    "gamma": 0.9,
+    "target_interval": 256,
+    "validation_cost": 1167.780269312651,
+    "best_episode": 320,
+    "selection_rule": "Minimum mean validation cost across 3 seeds, then best validation seed; best checkpoint by validation",
+    "study_seconds": 210.85693216323853
+  },
+  "protocol_sha256": "af48f3ee80b5b7b249b022b1e0c7e37467c0378ac3091a54031508bf9edcb5c2"
+}
