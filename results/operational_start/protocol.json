@@ -1,0 +1,15 @@
+{
+  "purpose": "Causal initial reserve only, no new training and no change to network weights or capacity",
+  "candidate_margins": [
+    1.0,
+    0.9,
+    0.8,
+    0.7
+  ],
+  "history_slots": 4,
+  "decision_lead_slots": 6,
+  "selection": "validation overloaded slots, excess requests, total cost including preparation estimate",
+  "weights_sha256": "2b6e6b32dce3a3d2becffd9b1cb5486d0ecd29bc05372fe73c3cd9f54ded2bad",
+  "test_note": "Previously observed test, repeated diagnostic evaluation",
+  "preparation_note": "Decision uses only requests before t=start-6. Replay six real pre-start intervals, expanding at most one shard per step; charge actual simulated server, overload and accumulated repeated migration costs. Publish pre-start overload separately; zero post-start does not mean zero during warmup."
+}

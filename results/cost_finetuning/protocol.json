@@ -1,0 +1,92 @@
+{
+  "configs": [
+    {
+      "cost_weight": 1.0,
+      "gamma": 0.9,
+      "stress": false,
+      "lr": 0.0001
+    },
+    {
+      "cost_weight": 1.0,
+      "gamma": 0.9,
+      "stress": true,
+      "lr": 0.0001
+    },
+    {
+      "cost_weight": 1.0,
+      "gamma": 0.99,
+      "stress": false,
+      "lr": 0.0001
+    },
+    {
+      "cost_weight": 1.0,
+      "gamma": 0.99,
+      "stress": true,
+      "lr": 0.0001
+    },
+    {
+      "cost_weight": 2.0,
+      "gamma": 0.9,
+      "stress": false,
+      "lr": 0.0001
+    },
+    {
+      "cost_weight": 2.0,
+      "gamma": 0.9,
+      "stress": true,
+      "lr": 0.0001
+    },
+    {
+      "cost_weight": 2.0,
+      "gamma": 0.99,
+      "stress": false,
+      "lr": 0.0001
+    },
+    {
+      "cost_weight": 2.0,
+      "gamma": 0.99,
+      "stress": true,
+      "lr": 0.0001
+    },
+    {
+      "cost_weight": 4.0,
+      "gamma": 0.9,
+      "stress": false,
+      "lr": 0.0001
+    },
+    {
+      "cost_weight": 4.0,
+      "gamma": 0.9,
+      "stress": true,
+      "lr": 0.0001
+    },
+    {
+      "cost_weight": 4.0,
+      "gamma": 0.99,
+      "stress": false,
+      "lr": 0.0001
+    },
+    {
+      "cost_weight": 4.0,
+      "gamma": 0.99,
+      "stress": true,
+      "lr": 0.0001
+    }
+  ],
+  "screen_episodes": 200,
+  "final_episodes": 600,
+  "screen_seed": 7,
+  "final_seeds": [
+    7,
+    42,
+    123
+  ],
+  "finalists": 3,
+  "checkpoint": 40,
+  "initial": "results/safety/m30_e10_s42.npz",
+  "initial_sha256": "2b6e6b32dce3a3d2becffd9b1cb5486d0ecd29bc05372fe73c3cd9f54ded2bad",
+  "selection": "validation lexicographic overload count, excess, original cost; incumbent always included",
+  "synthetic_stress": "TRAIN-ONLY demand multipliers 0.75,1,1.25,1.5,2; routing and live inventory unchanged. Explicit sensitivity scenarios, not new real observations.",
+  "test": "Known test, repeated diagnostic evaluation. No test-based selection.",
+  "publication": "Local only; no commit or push"
+}
