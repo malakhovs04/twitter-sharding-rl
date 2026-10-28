@@ -1,0 +1,15 @@
+{
+  "name": "trial_0_seed_7",
+  "trial": 0,
+  "seed": 7,
+  "cost": 1203.7979326801308,
+  "server_cost": 732.0,
+  "overload_cost": 462.9358476613052,
+  "migration_cost": 8.862085018825473,
+  "overloaded_slots": 67,
+  "excess_requests": 125201,
+  "moved_mb": 45.831304,
+  "mean_shards": 7.625,
+  "changes": 14,
+  "study_seconds": 314.6947660446167
+}
