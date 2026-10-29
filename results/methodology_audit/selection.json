@@ -1,0 +1,12 @@
+{
+  "cost": {
+    "up": 1.1,
+    "down": 0.85,
+    "candidates": 363
+  },
+  "safety": {
+    "up": 0.95,
+    "down": 0.1,
+    "candidates": 363
+  }
+}

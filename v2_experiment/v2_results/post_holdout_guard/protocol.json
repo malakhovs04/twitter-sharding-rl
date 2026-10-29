@@ -1,0 +1,8 @@
+{
+  "status": "EXPLORATORY POST-HOLDOUT, created after observing cluster26 stalled migration; no independent performance claim",
+  "dirty_bandwidth_limit": 0.8,
+  "max_estimated_slots": 8,
+  "past_slots": 4,
+  "abort_active": false,
+  "limitations": "Past rate does not bound future rate; no guarantee of completion or zero queue; may conservatively reject helpful moves"
+}

@@ -1,0 +1,16 @@
+{
+  "reason": "Original first==0 check rejected valid first-event offset 1 second. No policy outcomes for cluster10 were computed.",
+  "change": "Accept first event within first slot. gets read-only work1; add attempt work2, update inventory and dirty bytes only when key absent in reconstructed state. No model/selection changes.",
+  "cluster": 10,
+  "weights_and_selection": "unchanged, frozen manifest verified before evaluation",
+  "excluded_cluster45": "Original refusal preserved; now evaluated as explicitly revised parser scenario before any policy performance for this cluster",
+  "original_parser_sha256": "69561560772c4eaee428bbc6779f502c187b73a5496a0ceb34be98816b392a99",
+  "supplement_parser_sha256": "3594b57a7191e4b60b731843a420b7ef73c5c35300848830e1e7852970eb6ccb",
+  "retuning": false,
+  "clusters": [
+    10,
+    45
+  ],
+  "semantic_source": "https://docs.memcached.org/protocols/basic/",
+  "assumptions": "No success flags; empty reconstructed cache, no eviction. Conditional add semantics are scenario, not actual measured outcomes. TTL interpreted as relative trace TTL."
+}

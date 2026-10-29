@@ -1,0 +1,30 @@
+{
+  "q": {
+    "candidate": 3,
+    "seed": 7,
+    "path": "q_3_s7.npz",
+    "validation_cost": 29237.88908465792
+  },
+  "dqn_matched": {
+    "candidate": 3,
+    "seed": 7,
+    "path": "dqn_matched_3_s7.npz",
+    "validation_cost": 7225.0718334203675
+  },
+  "dqn_continuous": {
+    "candidate": 3,
+    "seed": 7,
+    "path": "dqn_continuous_3_s7.npz",
+    "validation_cost": 7213.1944181003955
+  },
+  "threshold": {
+    "up": 0.9,
+    "down": 0.4,
+    "validation_cost": 3952.487395924642,
+    "search_seconds": 6.19046104200001
+  },
+  "fixed_target": {
+    "target": 8.0,
+    "validation_cost": 4022.7075570724705
+  }
+}

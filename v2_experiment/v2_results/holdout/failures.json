@@ -1,0 +1,10 @@
+[
+  {
+    "cluster": 10,
+    "error": "Incomplete or invalid trace"
+  },
+  {
+    "cluster": 45,
+    "error": "Unsupported operations, no silent semantic substitution: {'add': 324643}"
+  }
+]

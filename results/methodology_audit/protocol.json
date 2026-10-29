@@ -1,0 +1,10 @@
+{
+  "status": "EXPLORATORY: entire week previously viewed",
+  "initial_shards": 2,
+  "action_limit": 1,
+  "selection": "validation only within already used week",
+  "repricing": "Frozen action traces: no retraining; capacity sensitivity replays policies with changed observations",
+  "capacity": 5409.0,
+  "migration_scale": 20686465.5,
+  "independent_generalization": false
+}

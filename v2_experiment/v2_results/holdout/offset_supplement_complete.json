@@ -1,0 +1,22 @@
+{
+  "clusters": [
+    10,
+    45
+  ],
+  "model_and_selection_unchanged": true,
+  "parser_changes_documented": true,
+  "compact_equivalence_checked": [
+    "cluster10_q_seed7.csv",
+    "cluster10_q_seed42.csv",
+    "cluster10_q_seed123.csv",
+    "cluster10_dqn_matched_seed7.csv",
+    "cluster10_dqn_matched_seed42.csv",
+    "cluster10_dqn_matched_seed123.csv",
+    "cluster10_dqn_continuous_seed7.csv",
+    "cluster10_dqn_continuous_seed42.csv",
+    "cluster10_dqn_continuous_seed123.csv",
+    "cluster10_threshold.csv",
+    "cluster10_selected_fixed_target.csv"
+  ],
+  "failures": []
+}

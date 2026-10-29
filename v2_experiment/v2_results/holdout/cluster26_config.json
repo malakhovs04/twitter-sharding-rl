@@ -1,0 +1,10 @@
+{
+  "capacity": 1374.4637044270833,
+  "bandwidth": 38044.4375,
+  "migration_scale": 304355.5,
+  "migration_cpu_fraction": 0.2,
+  "server_price": 1.0,
+  "transfer_price": 4.0,
+  "queue_price": 20.0,
+  "terminal_queue_price": 20.0
+}

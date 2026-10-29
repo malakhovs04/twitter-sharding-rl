@@ -1,0 +1,11 @@
+{
+  "reason": "Dense execution interrupted during sensitivity, not model selection. Equivalent grouping tested; existing primary traces compared numerically before replacement.",
+  "files": {
+    "compact_data.py": "a0a33f23de04db1679dce80e8547f46a94bfa9212309ab854d033dba9b316d64",
+    "prepare_compact.py": "fd769dbd0ac42cbc0b0ad3948a6b68b3c3dbe99b3cf1764debe00d7eb1b931de",
+    "test_compact.py": "6439835f14444131c5af0644f82396fdbeb30315801830e76e2e77f6baf15239",
+    "test_streaming_compact.py": "594dfc147f8bd08fee7c2f2cd3e4d6bd035a9e6c81412a0a977908612d4a4289",
+    "resume_compact_evaluation.py": "3367a22de3e08da894e37fad97e136ec93735e9b7dbee1066164d6efc743e606"
+  },
+  "retuned": false
+}

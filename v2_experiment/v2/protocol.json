@@ -1,0 +1,128 @@
+{
+  "version": "2.0",
+  "status": "Protocol before holdout download/evaluation; cluster7 entirely development because already viewed",
+  "holdout_clusters": [
+    10,
+    26,
+    45
+  ],
+  "choice_reason": "Three small files (11,13,18 MB) selected by archive size, not policy performance",
+  "holdout_calibration_slots": [
+    0,
+    96
+  ],
+  "holdout_scored_slots": [
+    96,
+    672
+  ],
+  "unsupported_operations": "Reject cluster and report exclusion; do not choose a replacement based on results",
+  "development_training_windows": [
+    [
+      96,
+      192
+    ],
+    [
+      192,
+      288
+    ],
+    [
+      288,
+      384
+    ]
+  ],
+  "development_validation_windows": [
+    [
+      384,
+      480
+    ],
+    [
+      480,
+      576
+    ],
+    [
+      576,
+      672
+    ]
+  ],
+  "development_capacity_calibration": [
+    96,
+    384
+  ],
+  "initial_state": "All policies start with 4 shards, identical trace-derived inventory, empty service queue, no active migration. This models an idle queue at deployment; not continuous production state.",
+  "work_scenario": "get=1, set=2, plus reported key+value bytes/4096; not measured CPU costs",
+  "capacity_scenario": "mean incoming work/(4*0.65) on calibration window",
+  "bandwidth_scenario": "median live inventory/8 bytes per slot; source service capacity reduced by 20% at full transfer rate",
+  "service": "Per-key fluid queue, proportional service within each shard; backlog survives cutover. Not per-request latency or FIFO SLA.",
+  "migration": "Snapshot bytes at start + all subsequent full write bytes for moving keys; background bounded transfer, source routing until atomic end-of-slot cutover. Ignore expiry cancellation conservatively. No abort; commands during migration ignored.",
+  "objectives": "All policies selected by mean validation model cost (server + transfer + queue + terminal liabilities). Also disclose queue metrics; no hard safety guarantee.",
+  "rl_candidates_each": [
+    {
+      "gamma": 0.9,
+      "rate": "low"
+    },
+    {
+      "gamma": 0.9,
+      "rate": "high"
+    },
+    {
+      "gamma": 0.99,
+      "rate": "low"
+    },
+    {
+      "gamma": 0.99,
+      "rate": "high"
+    }
+  ],
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "episodes": 80,
+  "episode_slots": 96,
+  "checkpoints": "Final only; no validation early stopping",
+  "rl_families": [
+    "tabular_Q",
+    "DQN_same_discrete_state",
+    "DQN_continuous_state_ablation"
+  ],
+  "threshold_grid": {
+    "up": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2,
+      1.3,
+      1.4,
+      1.5,
+      1.6,
+      1.7
+    ],
+    "down": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "queue_scale_up": true
+  },
+  "fixed_targets": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "budget_reporting": "Equal transitions, seeds, candidate count and validation calls across RL families. Baselines get exhaustive grid; report time separately, never equate configs with compute.",
+  "inference": "Three distinct clusters, descriptive per-cluster results only; no claimed population confidence interval or independence from shared infrastructure",
+  "no_retuning": "Freeze source and selected weights with SHA256 before loading holdout; report every prespecified cluster or explicit parser failure. Holdout outcomes cannot change selected policies in this version.",
+  "deployment_seed": 7,
+  "model_selection": "Minimum mean validation cost across all three folds and seeds per candidate; deploy predeclared seed7, report all selected-candidate seeds",
+  "holdout_sensitivity": "Frozen policies replayed at 0.5 and 2 times calibrated capacity, then separately bandwidth; do not choose policy using these outcomes"
+}

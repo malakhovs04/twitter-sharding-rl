@@ -1,0 +1,18 @@
+{
+  "source": "cluster26.sort.sample100.zst",
+  "source_sha256": "79384e238de23d38ac7c73a1c689dc694721f271101bf1e6f0edc1c160acc9c7",
+  "keys": 115325,
+  "requests": 1649667,
+  "operations": {
+    "get": 1206801,
+    "set": 442866
+  },
+  "slots": 672,
+  "slot_seconds": 900,
+  "weights": {
+    "get": 1,
+    "set": 2,
+    "reported_bytes_divisor": 4096
+  },
+  "status": "Scenario work units, not measured CPU/latency. TTL request semantics assume successful writes; no eviction."
+}

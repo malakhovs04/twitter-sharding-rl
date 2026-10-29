@@ -1,0 +1,14 @@
+{
+  "source": "cluster45.sort.sample100.zst",
+  "source_sha256": "8cb4a1e0f2eb8eed34383bc9bab0715fb73e535d6cc1ca64ce01db1f0c7651ec",
+  "keys": 639558,
+  "routing_groups": 128,
+  "requests": 2333422,
+  "operations": {
+    "get": 2008779,
+    "add": 324643
+  },
+  "first_second": 0,
+  "last_second": 628520,
+  "semantics": "get/gets read-only work1; set/add attempts work2; add writes only if absent in reconstructed state; relative TTL, no eviction/success flags"
+}

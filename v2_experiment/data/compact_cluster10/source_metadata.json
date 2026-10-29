@@ -1,0 +1,19 @@
+{
+  "source": "cluster10.sort.sample100.zst",
+  "source_sha256": "452143c145809bf0147a29e115d9a8ed31a33279600d1d07611a7109d6b734f0",
+  "keys": 680372,
+  "requests": 1360998,
+  "operations": {
+    "get": 680927,
+    "add": 680050,
+    "gets": 21
+  },
+  "slots": 672,
+  "slot_seconds": 900,
+  "weights": {
+    "get_or_gets": 1,
+    "set_or_add_attempt": 2,
+    "reported_bytes_divisor": 4096
+  },
+  "status": "Scenario work units, not measured CPU/latency. set assumed successful, add conditional on reconstructed absence, gets read-only; TTL relative seconds, no eviction or success flags."
+}
