@@ -10,3 +10,8 @@ data/*.zst
 
 # Local presentation materials
 /presentations/
+
+# Original local experiment data retained outside the published project
+/data/
+/.vscode/
+*.code-workspace
